@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    border: 1px solid lightskyblue;
+}
+
+.container {
+    display: grid;
+    height: 1200px;
+    grid-template-areas: 'nav nav nav nav nav nav'
+                         'left left content content right right'
+                         'left left footer footer right right';
+}
+
+.navigation {
+    grid-area: nav;
+}
+
+.navlinks { 
+    border: 1px solid lightskyblue;
+    font-size: 36px;
+    font-weight: bold;
+    justify-self: center;
+    margin: 0;
+}
+
+.navlink-group {
+    display: inline-block;
+    justify-self: center;
+    margin-right: 10px;
+    /* nav bar list items */
+}
+
+.navlink-group a {
+    /* nav bar links/text */
+}
+
+code {
+    /* Code snippet in index html */
+}
+
+.content {
+    grid-area: content;
+}
+
+h1 {
+    /* main title */
+}
+
+h2 {
+    /* page title? */
+}
+
+h3 {
+    /*section title */
+}
+
+p {
+    /* paragraph content */
+}
+
+.next-button {
+    /* Next button at bottom of each page */
+}
+
+/* FONTS */
