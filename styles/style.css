@@ -31,36 +31,8 @@ body {
     /* nav bar list items */
 }
 
-.navlink-group a {
-    /* nav bar links/text */
-}
-
-code {
-    /* Code snippet in index html */
-}
-
-.content {
-    grid-area: content;
-}
-
-h1 {
-    /* main title */
-}
-
-h2 {
-    /* page title? */
-}
-
-h3 {
-    /*section title */
-}
-
-p {
-    /* paragraph content */
-}
-
-.next-button {
-    /* Next button at bottom of each page */
+.content-source {
+    display: none;
 }
 
 /* FONTS */
