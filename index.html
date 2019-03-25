@@ -29,13 +29,23 @@
 <body>
     <div class="container">
         <header class="top-icons"><img class ="vscode-img" src="resources/code_70x70.png">
-             <span>File Edit Selection View Go Debug Terminal Help</span> 
+             <ul>
+                 <li>File</li>
+                 <li>Edit</li>
+                 <li>Selection</li>
+                 <li>View</li>
+                 <li>Go</li>
+                 <li>Debug</li>
+                 <li>Terminal</li>
+                 <li>Help</li>
+             </ul>
         </header>
         <div class="left-icons"><img src="resources/vs-icons.PNG"></div>
         <div class="explorer">
-            <section class="explorer-heading">&nbsp;&nbsp;&nbsp;&nbsp; EXPLORER</section>
-            <section><span class="gray-triangle">&rtri;</span> OPEN EDITORS</section>
+            <section class="explorer-heading">&nbsp;&nbsp;EXPLORER</section>
+            <section><span class="gray-triangle">&rtri;</span> <b>OPEN EDITORS</b></section>
             <section class="files">
+                <section class "file-name"><span class="gray-triangle">&dtri;</span><b>HTML-ME-SOMETHING</b></section>
                 <section id="index.html.button" class="file-name" onclick="display_content('index.html')">
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <svg xmlns="http://www.w3.org/2000/svg" width=12 height=12 viewBox="5 5 20 20">
@@ -73,15 +83,15 @@
                 </section>
             </section>
         </div>
+        <div class="file-tab">
+            <section> 
+                <svg xmlns="http://www.w3.org/2000/svg" width=12 height=12 viewBox="5 5 20 20">
+                    <path fill="#EF7623" d="M8 15l6-5.6V12l-4.5 4 4.5 4v2.6L8 17v-2zm16 2.1l-6 5.6V20l4.6-4-4.6-4V9.3l6 5.6v2.2z"/>
+                </svg>
+                    <span id="cur-file"> &nbsp Test.html</span> &cross;
+            </section>
+        </div>
         <div class="content">
-            <div class="file-tab">
-                <section> 
-                    <svg xmlns="http://www.w3.org/2000/svg" width=12 height=12 viewBox="5 5 20 20">
-                        <path fill="#EF7623" d="M8 15l6-5.6V12l-4.5 4 4.5 4v2.6L8 17v-2zm16 2.1l-6 5.6V20l4.6-4-4.6-4V9.3l6 5.6v2.2z"/>
-                    </svg>
-                     <span id="cur-file"> &nbsp Test.html</span> &cross;
-                </section>
-            </div>
             <article id="displayed-content"></article>
         </div>
         
@@ -193,7 +203,7 @@
         </p>
     </article>
     <article id="section2.html" class="content-source">
-        <h3>Where change began to creep in</h3>
+        <h2>Where change began to creep in</h2>
         <p>Realistically, I never "knew" what I wanted to be when I grew up. The only real interest I ever had
             involved
             technology.
@@ -369,7 +379,7 @@
         </p>
     </article>
     <article id="section3.html" class="content-source">
-        <h3>Where my inspiration has gotten me</h3>
+        <h2>Where my inspiration has gotten me</h2>
         <p>
             After about 5-6 months toying with Game Maker Studio, I decided to take a shot at other programming
             languages. I
@@ -388,6 +398,7 @@
             quit my job and do just that, minus the time-traveling.
         </p>
         <h3>Getting my GED</h3>
+        <p>
         Having dropped out about 11 years prior, there was plenty that I did not remember about ...well, school
         period.
         I
@@ -412,7 +423,9 @@
         be
         offered. So.. I'm at a college anyways, why not sign up for classes?
         So I did.
+        </p>
         <h3>Going back to school at 27...</h3>
+        <p>
         Being that I'm 27, intending on going through LaunchCode, and knowing that the industry is tending to put
         less
         emphasis on formal education, and more on applicable knowledge,
@@ -433,7 +446,9 @@
         more or less ideal for me. I will say, being 27, it is very strange being back in a class room. However, I
         appreciate it so much more. Never in my life did I really ever anticipate
         that I would have stepped foot in a college class room. But there I was.
+        </p>
         <h3>Starting LaunchCode</h3>
+        <p>
         My general structure of my college classes was basically three sets of two classes, each taken at
         half-semester
         lengths. So, instead of 16 week full-semester classes, they were
@@ -455,7 +470,9 @@
         the
         same
         time.
+        </p>
         <h3>Finishing Certificate at SCC</h3>
+        <p>
         At the time of writing this, I actually only finished my college courses a week or two ago. It's a huge
         weight
         off
@@ -481,6 +498,7 @@
         in
         to
         the industry.
+        </p>
         <h3>4.0 GPA and making the deans list</h3>
         <p>Another accomplishment that I feel is difficult to gauge. I'm excited and happy, as someone who dropped
             out
@@ -501,7 +519,7 @@
         </p>
     </article>
     <article id="section4.html" class="content-source">
-        <h3>Where I dream to go</h3>
+        <h2>Where I dream to go</h2>
         <h3>Personal motivation and inspiration</h3>
         <p>
             My initial inspiration was a combination of unhappiness of where I found myself in life, and meeting a

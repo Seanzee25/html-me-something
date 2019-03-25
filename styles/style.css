@@ -6,6 +6,8 @@ body {
     align-content: center;
     justify-content: center;
     user-select: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
 }
 
 .container, .top-icons, .left-icons, .explorer, .content, .footer-img {
@@ -24,17 +26,31 @@ body {
     width: 90vw;
     margin: 20px;
     grid-template-areas: 'header header header'
+                         'left explorer file-tab'
                          'left explorer content'
                          'footer footer footer';
     grid-template-columns: 3% 17% 80%;
-    grid-template-rows: 3% 94% 3%;
-    overflow: hidden;
+    grid-template-rows: 3% 4% 90% 3%;
 }
 
 .top-icons {
     display: flex;
     padding: 2px;
     grid-area: header;
+}
+
+.top-icons li {
+    display: inline-flex;
+    padding: 2px;
+    justify-self: center;
+    position: relative;
+    bottom: 17px;
+    right: 20px;
+    border: 1px solid black;
+}
+
+.top-icons li:hover {
+    border: 1px dotted orange;
 }
 
 .left-icons {
@@ -46,6 +62,7 @@ body {
 }
 
 .explorer-heading {
+    padding-top: 5px;
     padding-bottom: 20px;
 }
 
@@ -67,10 +84,13 @@ body {
 
 .content {
     grid-area: content;
+    overflow: scroll;
 }
 
 .file-tab {
-    border-bottom: 2px solid rgb(170, 190, 202);
+    grid-area: file-tab;
+    border: 2px solid rgb(170, 190, 202);
+    padding: 3px;
 }
 
 .file-tab section {
@@ -80,7 +100,24 @@ body {
 }
 
 #displayed-content {
+    padding-right: 10%;
+    padding-left: 5%;
+}
 
+#displayed-content h1 {
+    color: #7DCEA0;
+}
+
+#displayed-content h2 {
+    color: #2E86C1;
+}
+
+#displayed-content h3 {
+    color: #AED6F1;
+}
+
+#displayed-content p {
+    color: #F9E79F;
 }
 
 footer {
