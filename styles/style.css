@@ -132,6 +132,17 @@ body {
     color: #F9E79F;
 }
 
+#displayed-content a {
+    color: #7DCEA0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#displayed-content .game img {
+    width: 100%;
+    height: 100%;
+}
+
 footer {
     display: flex;
     object-fit: fill;
