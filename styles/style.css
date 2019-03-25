@@ -84,7 +84,19 @@ body {
 
 .content {
     grid-area: content;
-    overflow: scroll;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(59, 132, 214, 0.5);
+}
+
+::-webkit-scrollbar-track {
+    border-left: 1px solid rgb(170, 190, 202);
 }
 
 .file-tab {
