@@ -18,6 +18,8 @@ body {
 
 .container {
     display: grid;
+    min-height: 800px;
+    min-width: 1200px;
     height: 90vh;
     width: 90vw;
     margin: 20px;
