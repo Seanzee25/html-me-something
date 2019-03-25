@@ -6,6 +6,7 @@
     <title>My Coding Journey</title>
     <script>
         function display_content(id) {
+            document.getElementById("cur-file").innerHTML = id;
             document.getElementById("displayed-content").innerHTML = document.getElementById(id).innerHTML;
             var elements = document.getElementsByClassName("file-name");
             for(var i = 0; i < elements.length; i++) {
@@ -35,16 +36,51 @@
             <section class="explorer-heading">&nbsp;&nbsp;&nbsp;&nbsp; EXPLORER</section>
             <section><span class="gray-triangle">&rtri;</span> OPEN EDITORS</section>
             <section class="files">
-                <section id="index.html.button" class="file-name" onclick="display_content('index.html')">&nbsp;&nbsp;&nbsp;&nbsp;index.html</section>
-                <section id="section1.html.button" class="file-name" onclick="display_content('section1.html')">&nbsp;&nbsp;&nbsp;&nbsp;section1.html</section>
-                <section id="section2.html.button" class="file-name" onclick="display_content('section2.html')">&nbsp;&nbsp;&nbsp;&nbsp;section2.html</section>
-                <section id="section3.html.button" class="file-name" onclick="display_content('section3.html')">&nbsp;&nbsp;&nbsp;&nbsp;section3.html</section>
-                <section id="section4.html.button" class="file-name" onclick="display_content('section4.html')">&nbsp;&nbsp;&nbsp;&nbsp;section4.html</section>
+                <section id="index.html.button" class="file-name" onclick="display_content('index.html')">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width=12 height=12 viewBox="5 5 20 20">
+                        <path fill="#EF7623" d="M8 15l6-5.6V12l-4.5 4 4.5 4v2.6L8 17v-2zm16 2.1l-6 5.6V20l4.6-4-4.6-4V9.3l6 5.6v2.2z"/>
+                    </svg>
+                    index.html
+                </section>
+                <section id="section1.html.button" class="file-name" onclick="display_content('section1.html')">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width=12 height=12 viewBox="5 5 20 20">
+                        <path fill="#EF7623" d="M8 15l6-5.6V12l-4.5 4 4.5 4v2.6L8 17v-2zm16 2.1l-6 5.6V20l4.6-4-4.6-4V9.3l6 5.6v2.2z"/>
+                    </svg>
+                    section1.html
+                </section>
+                <section id="section2.html.button" class="file-name" onclick="display_content('section2.html')">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width=12 height=12 viewBox="5 5 20 20">
+                        <path fill="#EF7623" d="M8 15l6-5.6V12l-4.5 4 4.5 4v2.6L8 17v-2zm16 2.1l-6 5.6V20l4.6-4-4.6-4V9.3l6 5.6v2.2z"/>
+                    </svg>
+                    section2.html
+                </section>
+                <section id="section3.html.button" class="file-name" onclick="display_content('section3.html')">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width=12 height=12 viewBox="5 5 20 20">
+                        <path fill="#EF7623" d="M8 15l6-5.6V12l-4.5 4 4.5 4v2.6L8 17v-2zm16 2.1l-6 5.6V20l4.6-4-4.6-4V9.3l6 5.6v2.2z"/>
+                    </svg>
+                    section3.html
+                </section>
+                <section id="section4.html.button" class="file-name" onclick="display_content('section4.html')">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width=12 height=12 viewBox="5 5 20 20">
+                        <path fill="#EF7623" d="M8 15l6-5.6V12l-4.5 4 4.5 4v2.6L8 17v-2zm16 2.1l-6 5.6V20l4.6-4-4.6-4V9.3l6 5.6v2.2z"/>
+                    </svg>
+                    section4.html
+                </section>
             </section>
         </div>
         <div class="content">
             <div class="file-tab">
-                <section> <svg xmlns="http://www.w3.org/2000/svg" width=12 height=12 viewBox="5 5 20 20"><path fill="#EF7623" d="M8 15l6-5.6V12l-4.5 4 4.5 4v2.6L8 17v-2zm16 2.1l-6 5.6V20l4.6-4-4.6-4V9.3l6 5.6v2.2z"/></svg> &nbsp Test.html</section>
+                <section> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width=12 height=12 viewBox="5 5 20 20">
+                        <path fill="#EF7623" d="M8 15l6-5.6V12l-4.5 4 4.5 4v2.6L8 17v-2zm16 2.1l-6 5.6V20l4.6-4-4.6-4V9.3l6 5.6v2.2z"/>
+                    </svg>
+                     <span id="cur-file"> &nbsp Test.html</span> &cross;
+                </section>
             </div>
             <article id="displayed-content"></article>
         </div>
